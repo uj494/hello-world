@@ -1,0 +1,137 @@
+header {
+	width: 100%;
+	height: 80px;
+	background-color:  	#0000FF;
+	margin-bottom: 40px;
+	opacity: .8;
+}
+
+header .hum {
+	width: 100%;
+	height: 60px;
+	background-color: #6495ed;
+	margin-bottom: 40px;
+}
+
+nav ul {
+	float: right;
+	margin-top:20px;
+	margin-right: 10px;
+	list-style: none;
+}
+
+
+nav ul li {
+float: left;
+ 	width: 120px;
+ 	height: 40px;
+ 	line-height: 40px;
+ 	margin-top: 3px;
+ 	margin-right: 35px;
+ 
+}
+
+nav ul li button {
+ 	
+ 	text-decoration:none;
+ 	display:block;
+ 	margin-top: 5px;
+ }
+
+nav ul li button:hover {
+ 	background-color: #00ffff; 
+ }
+
+nav ul li ul li {
+ 	display: none;
+ }
+
+nav ul li:hover ul li{
+ 	display: block;
+ 	margin-left: 100px;
+
+ }
+
+nav ul li ul{
+	margin-left: 3px;
+ 	margin-top: -1px;
+ }
+
+nav ul form {
+
+	float: left;
+}
+
+nav ul form input {
+	float: left;
+	border: none;
+	margin-right: 6px;
+	margin-top: 7px;
+}
+
+
+nav ul form button {
+	float: left;
+	border: none;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	margin-left: 10px;
+	background-color: #fff;
+	color: #222;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+form button {
+	background-color: #0000FF;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+div form input {
+height: 20px;
+width: 300px;
+}
+ div form{
+	margin-top: 70px;
+}
+body{
+	background-color: #fff8dc;
+	background-size: cover;
+}
+
+.products button{
+	background-color:  	#0000FF;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;	
+}
+
+.hum {
+	padding-top: 10px;
+	color: #0000FF;
+}
+
+.ol li {
+	font-weight: 200px;
+}
+ hr {
+ 	display: block;
+ 	margin-top: 1px;
+ 	margin-bottom: 1px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	border-style: inset;
+ 	border-width: 1px;
+ 	border-color: #0000FF;
+ }
+
+ .h3 {
+ 	
+ 	text-align: left;
+ }
+
+img {
+	border-radius: 30px;
+}
+ 
