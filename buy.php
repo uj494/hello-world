@@ -1,6 +1,6 @@
 <?php
-include 'header.php';
-include 'C:\wamp64\www\WebTech\includes\dbh-inc.php';
+require_once 'header.php';
+require_once 'includes/dbh-inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ include 'C:\wamp64\www\WebTech\includes\dbh-inc.php';
 <head>
 	<title>BUY</title>
 </head>
-<body background="img\pencil-art-colorful-wallpaper-99342104.jpg">
+<body background="img/pencil-art-colorful-wallpaper-99342104.jpg">
 
 <h3 align="center"> Choose Your Payment Option </h3><br><br>
 <?php

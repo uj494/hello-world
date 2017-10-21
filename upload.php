@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'C:\wamp64\www\WebTech\includes\dbh-inc.php';
+require_once 'includes/dbh-inc.php';
 
 $id = $_SESSION['user_id'];
 

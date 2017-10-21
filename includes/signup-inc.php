@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include 'dbh-inc.php';
+require_once 'dbh-inc.php';
 
 $first = $_POST['first'];
 $last = $_POST['last'];

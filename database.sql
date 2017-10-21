@@ -7,11 +7,12 @@ CREATE TABLE users (
  user_pwd varchar(256) not null
  );
 
-INSERT INTO users (user_first,
-user_last,
-user_email,
- user_uid,
- user_pwd ) VALUES ('$first','$last','$email','$userid','$password');
+INSERT INTO users (
+	user_first,
+	user_last,
+	user_email,
+	user_uid,
+	user_pwd ) VALUES ('$first','$last','$email','$userid','$password');
 
 CREATE TABLE users (
  	cid int(11) AUTO_INCREMENT PRIMARY KEY not null,

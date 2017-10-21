@@ -1,6 +1,6 @@
 <?php
-include 'header.php';
-include 'C:\wamp64\www\WebTech\includes\dbh-inc.php';
+require_once 'header.php';
+require_once 'includes/dbh-inc.php';
 ?>
 
 
@@ -8,9 +8,9 @@ include 'C:\wamp64\www\WebTech\includes\dbh-inc.php';
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
-<body background="img\pencil-art-colorful-wallpaper-99342104.jpg">
+<body background="img/pencil-art-colorful-wallpaper-99342104.jpg">
 
 <?php
 if (isset($_SESSION['user_id'])) {
@@ -23,14 +23,14 @@ while ($rowimg = mysqli_fetch_assoc($resultimg)) {
 	echo "<div  align='center'>";
 	 if ($rowimg['status'] == 0) {
 
-	 	$filename = "uploads\profile".$id."*";
+	 	$filename = "uploads/profile".$id."*";
 
 		$fileinfo = glob($filename);
 
 		$fileext = explode(".", $fileinfo[0]);
 		$fileactualext = $fileext[1];
 
-	 	echo "<img src='uploads\profile".$id.".".$fileactualext."?".mt_rand()."' height='300px' width='300px'>";
+	 	echo "<img src='uploads/profile".$id.".".$fileactualext."?".mt_rand()."' height='300px' width='300px'>";
 
 
 	 ?>	<br><br><form action="deleteprof.php" method="POST" >
@@ -38,7 +38,7 @@ while ($rowimg = mysqli_fetch_assoc($resultimg)) {
 </form>"
 	 <?php  
 	} else{
-	 	echo "<img src='img\default.jpg'";
+	 	echo "<img src='img/default.jpg'";
 	 }
 	echo "</div>";
 }

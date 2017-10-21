@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+require_once 'header.php';
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +7,7 @@ include 'header.php';
 <head>
 	<title>PAID</title>
 </head>
-<body background="img\pencil-art-colorful-wallpaper-99342104.jpg">
+<body background="img/pencil-art-colorful-wallpaper-99342104.jpg">
 <h1 align="center">Order Successful!</h1>
 <h1 align="center">Your Order will arrive within 7 days.</h1> 
 <div align="center">

@@ -1,6 +1,6 @@
 <?php
-include 'header.php';
-include 'C:\wamp64\www\WebTech\includes\dbh-inc.php';
+require_once 'header.php';
+require_once 'includes/dbh-inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ include 'C:\wamp64\www\WebTech\includes\dbh-inc.php';
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body  background="img\pencil-art-colorful-wallpaper-99342104.jpg">
+<body  background="img/pencil-art-colorful-wallpaper-99342104.jpg">
  
 <?php
 if (isset($_SESSION['user_id'])) {
@@ -34,8 +34,6 @@ if (isset($_SESSION['user_id'])) {
 	echo "<p  align='center'><h2 align='center'>YOU ARE NOT LOGGED IN!</h2></p>";
 }
 ?>
-
-
 
 </body>
 </html>

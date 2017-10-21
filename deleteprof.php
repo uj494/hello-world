@@ -1,18 +1,18 @@
 <?php
 
 session_start();
-include 'C:\wamp64\www\WebTech\includes\dbh-inc.php';
+require_once 'includes/dbh-inc.php';
 
 $id = $_SESSION['user_id'];
 
-$filename = "uploads\profile".$id."*";
+$filename = "uploads/profile".$id."*";
 
 $fileinfo = glob($filename);
 
 $fileext = explode(".", $fileinfo[0]);
 $fileactualext = $fileext[1];
 
-$file =  "uploads\profile".$id.".".$fileactualext;
+$file =  "uploads/profile".$id.".".$fileactualext;
 
 if (!unlink($file)) {
 	echo "File was not deleted ";
