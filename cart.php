@@ -1,7 +1,6 @@
 <?php
 session_start();
 require_once 'includes/dbh-inc.php';
-echo "<link rel='stylesheet' type='text/css' href='styles/style.css'>";
 
 $uid = $_POST['id'];
 $p_id = $_POST['p_id'];

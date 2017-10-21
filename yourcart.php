@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body background="img/pencil-art-colorful-wallpaper-99342104.jpg">
-
 <?php
 require_once 'header.php';
-require_once 'includes/dbh-inc.php';
 
 echo "<div align='center'> <form  method='POST'  action='viewproducts.php'>";
 		 	
