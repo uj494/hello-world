@@ -98,6 +98,7 @@ width: 300px;
 body{
 	background-color: #fff8dc;
 	background-size: cover;
+	text-decoration: white;
 }
 
 .products button{
@@ -134,4 +135,6 @@ body{
 img {
 	border-radius: 30px;
 }
- 
+
+
+

@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<div style="color: white;">
 <?php
 session_start();
 
@@ -52,3 +61,6 @@ header('Location: ../index.php?signup=success');
 }
 }
 ?>
+</div>
+</body>
+</html>

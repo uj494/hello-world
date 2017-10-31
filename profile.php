@@ -11,7 +11,7 @@ include 'C:\wamp64\www\WebTech\includes\dbh-inc.php';
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body background="img\pencil-art-colorful-wallpaper-99342104.jpg">
-
+<div style="color: black;">
 <?php
 if (isset($_SESSION['user_id'])) {
 
@@ -63,5 +63,6 @@ while ($rowimg = mysqli_fetch_assoc($resultimg)) {
 <?php
 }
 ?>
+</div>
 </body>
 </html>

@@ -20,22 +20,20 @@ if (strpos($url, 'error=empty') !== false) {
 	echo "<h2 align='center'>FILL OUT ALL FEILDS!</h2>";	
 }
 
-elseif (strpos($url, 'error=username') !== false) {
-	echo "<h3 align='center'>Username exists!</h3>";	
+if (strpos($url, 'error=username') !== false) {
+  echo "<h3 align='center'>Username don't exists!</h3>";  
 }
 
-if (isset($_SESSION['user_id'])) {
-	echo "YOU ARE ALREADY LOGGED IN";
-} else {
+
+if (strpos($url, 'error=pwd') !== false) {
+  echo "<h3 align='center'>Wrong Password!</h3>";  
+}
+
+
+else {
 ?>
 	<div align="center" >
- <form action="includes/signup-inc.php" method="POST" style="width: 500px;" autocomplete="OUT">
-  <div class="form-group" align="center">
-    <input type="text" class="form-control" name="first" placeholder="Firstname">
-  </div>
-  <div class="form-group" align="center">
-    <input type="text" class="form-control" name="last" placeholder="Lastname">
-  </div>
+ <form action="includes/login-inc.php" method="POST" style="width: 500px;" autocomplete="OUT">
   <div class="form-group" align="center">
     <input type="text" class="form-control" name="id" placeholder="UserID">
   </div>
@@ -43,7 +41,7 @@ if (isset($_SESSION['user_id'])) {
     <input type="Password" class="form-control" name="pwd" placeholder="Password">
   </div>
   <div class="form-group" align="center">
-  <button type="submit" class="btn btn-light" name="submit" >Sign Up</button>
+  <button type="submit" class="btn btn-light" name="submit" >Login</button>
   </div>
 </form>
 </div>
@@ -60,5 +58,6 @@ if (isset($_SESSION['user_id'])) {
 }
 ?>
 </div>
+
 </body>
 </html>

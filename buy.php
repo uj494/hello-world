@@ -7,8 +7,15 @@ include 'C:\wamp64\www\WebTech\includes\dbh-inc.php';
 <html>
 <head>
 	<title>BUY</title>
+  
 </head>
 <body background="img\pencil-art-colorful-wallpaper-99342104.jpg">
+<div style="color: white;">
+
+<div align='center'> <form  method='POST'  action='yourcart.php'>
+      
+     <button name='cart' type='submit' class='btn btn-light'>Back To Cart</button></li>
+      </form></div><br><br>
 
 <h3 align="center"> Choose Your Payment Option </h3><br><br>
 <?php
@@ -25,9 +32,9 @@ $sqlbuy = "SELECT * FROM cart WHERE userid='$id'";
   			echo "<h3 class = 'h3'>".$rowcart['pro_name'].":".$rowcart['pro_price']."</h3> <hr><br>";
 
  }
- echo "<h3 class = 'h3'>Total Price :-".$sum."</h3><hr><br><br>";
+ echo "<h3 class = 'h3 '>Total Price :-".$sum."</h3><hr><br><br>";
 ?>
-<h2> Your Details :-</h2>
+<h2 > Your Details :-</h2>
 
  <form  method="POST" style="width: 500px;" autocomplete="OUT">
   <div class="form-group" align="center">
@@ -104,5 +111,6 @@ elseif (isset($_POST['CreditCard'])) {
 </div>";
 }
 ?>
+</div>
 </body>
 </html>

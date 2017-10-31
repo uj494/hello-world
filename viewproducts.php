@@ -9,7 +9,7 @@ include 'C:\wamp64\www\WebTech\includes\dbh-inc.php';
 </head>
 <body background="img\pencil-art-colorful-wallpaper-99342104.jpg">
 
-
+<div style="color: white;">
         <?php
 		echo "<h1 class='hum' align = center>Available Products</h1><br><br><br>";
 
@@ -62,6 +62,6 @@ $result4 = $conn->query($sql4);
 
 	echo "</ol>";
 }?>
-
+</div>
 </body>
 </html>

@@ -74,12 +74,14 @@ include 'C:\wamp64\www\WebTech\includes\dbh-inc.php';
 	
 				</form></li>";
 
-					echo "<li><form class='login'  action='includes/login-inc.php' method='POST'></li>
+					/*echo "<li><form class='login'  action='includes/login-inc.php' method='POST'></li>
 			<li><input type='text' name='id' placeholder='UserID'></li>
 			<li><input type='Password' name='pwd' placeholder='Password'></li>
 	<li><button type='submit' name='submit' class='btn btn-light'>login</button></li>
-</form>";
-				
+</form>";*/
+				echo "<li><form class='login'  action='login.php' method='POST'></li>
+					<li><button type='submit' name='submit' class='btn btn-light'>login</button></li>
+					</form>";
 			
 							
 			echo "<li><form  action='signup.php' >
